@@ -18,7 +18,13 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function isTyler(name){
+  if (name==="Tyler"){
+    return true;
+  } else {
+    return false;
+  }
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -28,7 +34,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function getName(){
+  return prompt("Please enter your name");
+} 
 
 
 ////////// PROBLEM 3 //////////
@@ -41,7 +49,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function welcome(){
+  alert("Welcome, " + getName());
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -51,7 +61,8 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+//Parameters are simply placeholders within the function.
+//Arguments are the actual values which are inserted into the function when the function is called.
 
 
 ////////// PROBLEM 5 //////////
@@ -61,8 +72,20 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
-
+//Falsy values in JavaScript:
+//1) false.
+//2) 0
+//3) '' or ""
+//4) null
+//5) undefined
+//6) NaN
+//Here is how you check if something is falsy:
+//You can check it by running it through an if statement like so:
+// if (somethingBeingChecked) {
+//   return true;
+// } else {
+//   return false;
+// }
 
 ////////// PROBLEM 6 //////////
 
@@ -71,7 +94,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+function myName(){
+  return "Benjamin";
+}
 
 
 /*
@@ -79,7 +104,7 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+var newMyName = function(){};
 
 
 /*
@@ -87,7 +112,7 @@ var name = 'Tyler';
 */
 
 // Code Here
-
+alert(newMyName());
 
 
 ////////// PROBLEM 7 //////////
@@ -97,7 +122,11 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function outerFn(){
+  return function() {
+    return "Benjamin";
+  }
+}
 
 
 /*
@@ -105,7 +134,7 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+var innerFn = outerFn();
 
 
 /* 
@@ -113,3 +142,4 @@ var name = 'Tyler';
 */
 
 // Code Here
+innerFn();
